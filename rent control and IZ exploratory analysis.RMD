@@ -1,0 +1,47 @@
+---
+title: "rent control and IZ exploratory analysis"
+author: "Eleanor Noble"
+date: "5/16/2022"
+output: html_document
+---
+
+Reading in baseline packages
+```{r}
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(lubridate)
+library(urbnthemes)
+library(skimr)
+library(expss) 
+library(sjlabelled) #to create labels for metadata
+library(tidycensus)
+library(urbnmapr)
+library(urbnthemes)
+library(sf)
+library(rgeos)
+library(lwgeom)
+library(rgdal)
+library(postmastr)
+library(ggmap)
+
+#trying this to clean the addresses
+# remotes::install_github("slu-openGIS/postmastr")
+# 
+# #someone said this might fix the coder
+# remotes::install_github("walkerke/tigris")
+
+
+options(tigris_use_cache = TRUE)
+# census_api_key("8cec105706224c86fe0bc15389cd5c44feafd743", install = TRUE)
+
+# set_urbn_defaults(style = "map")
+set_urbn_defaults(style = "print")
+today<-as.character(today())
+```
+
+read in the data
+```{r}
+
+```
+
