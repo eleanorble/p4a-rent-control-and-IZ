@@ -42,6 +42,13 @@ today<-as.character(today())
 
 read in the data
 ```{r}
+reforms<-read_csv("C:/Users/enoble/Box/P4A Rent Control and IZ/DataAnalysis/Data/RC_IZ_Data_Final_NotQuiteFinalForm.csv")%>%
+  filter(!is.na(ID))
+
+#It looks like each row is a unique census place associated with a reform. To get just the reforms I would take out the census place data and the other descriptive census stats and then only choose the unique rows. 
+```
+
+```{r}
 
 ```
 
